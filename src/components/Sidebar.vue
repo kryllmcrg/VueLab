@@ -1,91 +1,47 @@
 <template>
-  <!-- Section: Design Block -->
-  <section class="text-center">
-    <!-- Background image -->
-    <div class="p-5 bg-image" style="
-      background-image: url('https://mdbootstrap.com/img/new/textures/full/171.jpg');
-      height: 300px;
-    "></div>
-    <!-- Background image -->
+  <v-card
+    color="grey-lighten-4"
+    flat
+    height="200px"
+    rounded="0"
+  >
+    <v-toolbar density="compact">
+      <v-app-bar-nav-icon></v-app-bar-nav-icon>
 
-    <div class="card mx-4 mx-md-5 shadow-5-strong" style="
-      margin-top: -100px;
-      background: hsla(0, 0%, 100%, 0.8);
-      backdrop-filter: blur(30px);
-    ">
-      <div class="card-body py-5 px-md-5">
+      <v-toolbar-title>Title</v-toolbar-title>
 
-        <div class="row d-flex justify-content-center">
-          <div class="col-lg-8">
-            <h2 class="fw-bold mb-5">Sign up now</h2>
-            <form>
-              <!-- 2 column grid layout with text inputs for the first and last names -->
-              <div class="row">
-                <div class="col-md-6 mb-4">
-                  <div class="form-outline">
-                    <input type="text" id="form3Example1" class="form-control" />
-                    <label class="form-label" for="form3Example1">First name</label>
-                  </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                  <div class="form-outline">
-                    <input type="text" id="form3Example2" class="form-control" />
-                    <label class="form-label" for="form3Example2">Last name</label>
-                  </div>
-                </div>
-              </div>
+      <v-spacer></v-spacer>
 
-              <!-- Email input -->
-              <div class="form-outline mb-4">
-                <input type="email" id="form3Example3" class="form-control" />
-                <label class="form-label" for="form3Example3">Email address</label>
-              </div>
+      <v-btn icon>
+        <v-icon>mdi-magnify</v-icon>
+      </v-btn>
 
-              <!-- Password input -->
-              <div class="form-outline mb-4">
-                <input type="password" id="form3Example4" class="form-control" />
-                <label class="form-label" for="form3Example4">Password</label>
-              </div>
+      <v-btn icon>
+        <v-icon>mdi-heart</v-icon>
+      </v-btn>
 
-              <!-- Checkbox -->
-              <div class="form-check d-flex justify-content-center mb-4">
-                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
-                <label class="form-check-label" for="form2Example33">
-                  Subscribe to our newsletter
-                </label>
-              </div>
-
-              <!-- Submit button -->
-              <button type="submit" class="btn btn-primary btn-block mb-4">
-                Sign up
-              </button>
-
-              <!-- Register buttons -->
-              <div class="text-center">
-                <p>or sign up with:</p>
-                <button type="button" class="btn btn-link btn-floating mx-1">
-                  <i class="fab fa-facebook-f"></i>
-                </button>
-
-                <button type="button" class="btn btn-link btn-floating mx-1">
-                  <i class="fab fa-google"></i>
-                </button>
-
-                <button type="button" class="btn btn-link btn-floating mx-1">
-                  <i class="fab fa-twitter"></i>
-                </button>
-
-                <button type="button" class="btn btn-link btn-floating mx-1">
-                  <i class="fab fa-github"></i>
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Section: Design Block -->
+      <v-btn icon>
+        <v-icon>mdi-dots-vertical</v-icon>
+      </v-btn>
+    </v-toolbar>
+  </v-card>
+  
+  <v-navigation-drawer app>
+    <v-list dense nav>
+      <v-list-item to="/" link>
+        <v-list-item-icon>
+          <v-icon>mdi-view-dashboard</v-icon>
+        </v-list-item-icon>
+        <v-list-item-title>Home</v-list-item-title>
+      </v-list-item>
+      <v-list-item to="/manage" link>
+        <v-list-item-icon>
+          <v-icon>mdi-forum</v-icon>
+        </v-list-item-icon>
+        <v-list-item-title>About</v-list-item-title>
+      </v-list-item>
+    </v-list>
+  </v-navigation-drawer>
 </template>
 
 <script>
@@ -96,36 +52,4 @@ export default {
 
 <style scoped>
 /* Add your custom styles here */
-/* Customize the card background color */
-.card {
-  background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 15px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-/* Style the form labels */
-.form-label {
-  color: #333;
-  font-weight: bold;
-}
-
-/* Style the Submit button */
-.btn-primary {
-  background-color: #007bff;
-  border-color: #007bff;
-}
-
-/* Style the Register buttons */
-.btn-link.btn-floating {
-  font-size: 1.5rem;
-  margin: 0 5px;
-  color: #007bff;
-}
-
-/* Style the background image */
-.bg-image {
-  background-size: cover;
-  background-position: center;
-}
-
 </style>
