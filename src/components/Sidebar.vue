@@ -25,14 +25,14 @@
           density="compact"
           nav
         >
-          <v-list-item prepend-icon="mdi-view-dashboard" value="dashboard"></v-list-item>
+          <v-list-item prepend-icon="mdi-view-dashboard" to="/" value="dashboard"></v-list-item>
 
-          <v-list-item prepend-icon="mdi-forum" value="messages"></v-list-item>
+          <v-list-item prepend-icon="mdi-forum" to="/manage" value="messages"></v-list-item>
         </v-list>
       </v-navigation-drawer>
 
       <!-- Main Content -->
-      <v-main style="height: 300px">
+      <v-main style="height: 750px">
         <div class="content">
           <h1>Welcome to My App</h1>
           <p>This is the main content of your sidebar.</p>

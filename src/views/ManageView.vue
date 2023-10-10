@@ -1,14 +1,14 @@
 <template>
-    <Sidebar/>
+    <Content/>
   </template>
 
   <script>
-  import Sidebar from '../components/Sidebar.vue';
+  import Content from '../components/Content.vue';
 
   export default{
     name: 'ManageView',
     components:{
-        Sidebar
+        Content
     },
   }
 </script>
