@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '../views/HomeView.vue';
 import ManageView from '../views/ManageView.vue'; // Make sure the component name matches the filename
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const routes = [
   {
