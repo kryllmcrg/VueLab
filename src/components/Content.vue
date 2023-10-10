@@ -5,55 +5,55 @@
         <button class="navbar-toggler" type="button" @click="toggleSidebar">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <span class="navbar-brand">My Unique App</span>
+        <span class="navbar-brand">Your App Name</span>
       </nav>
   
       <!-- Sidebar -->
-      <!-- Sidebar -->
-<div class="row">
-  <div class="col-md-3">
-    <div class="bg-unique-secondary text-white p-3">
-      <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="User Avatar" class="img-fluid rounded-circle">
-    </div>
-    <ul class="list-group">
-      <li class="list-group-item">
-        <i class="fas fa-tachometer-alt"></i> <!-- Dashboard icon -->
-      </li>
-      <li class="list-group-item">
-        <i class="fas fa-envelope"></i> <!-- Messages icon -->
-      </li>
-    </ul>
-  </div>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="bg-unique-secondary text-white p-3">
+            <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="User Avatar" class="img-fluid rounded-circle">
+          </div>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <a href="/">
+                <i class="fas fa-tachometer-alt"></i> <!-- Dashboard icon -->
+                Dashboard
+              </a>
+            </li>
+            <li class="list-group-item">
+              <a href="/messages">
+                <i class="fas fa-envelope"></i> <!-- Messages icon -->
+                Messages
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
   
-        <!-- Main Content (Login Form) -->
-        <div class="col-md-9">
-          <div class="mt-4">
-            <div class="card">
-              <div class="card-header text-center bg-unique-primary text-white">
-                <h3>Welcome Back!</h3>
-              </div>
-              <div class="card-body">
-                <form @submit.prevent="login">
-                  <div class="mb-3">
-                    <label for="username" class="form-label text-unique-primary">Username</label>
-                    <input type="text" class="form-control" id="username" v-model="username" placeholder="Enter your unique username">
-                  </div>
-                  <div class="mb-3">
-                    <label for="password" class="form-label text-unique-primary">Password</label>
-                    <input type="password" class="form-control" id="password" v-model="password" placeholder="Enter your unique password">
-                  </div>
-                  <button type="submit" class="btn btn-unique-primary btn-block">Login</button>
-                </form>
-              </div>
+      <!-- Main Content (Login Form) -->
+      <div class="col-md-9">
+        <div class="mt-4">
+          <div class="card">
+            <div class="card-header text-center bg-unique-primary text-white">
+              <h3>Welcome Back!</h3>
+            </div>
+            <div class="card-body">
+              <form @submit.prevent="login">
+                <div class="mb-3">
+                  <label for="username" class="form-label text-unique-primary">Username</label>
+                  <input type="text" class="form-control" id="username" v-model="username" placeholder="Enter your unique username">
+                </div>
+                <div class="mb-3">
+                  <label for="password" class="form-label text-unique-primary">Password</label>
+                  <input type="password" class="form-control" id="password" v-model="password" placeholder="Enter your unique password">
+                </div>
+                <button type="submit" class="btn btn-unique-primary btn-block">Login</button>
+              </form>
             </div>
           </div>
         </div>
       </div>
-  
-      <!-- Footer -->
-      <footer class="bg-unique-primary text-white text-center p-2 mt-5">
-        &copy; 2023 My Unique App
-      </footer>
     </div>
   </template>
   
@@ -72,7 +72,8 @@
         this.sidebarOpen = !this.sidebarOpen;
       },
       login() {
-        // Handle login logic here
+        // Replace with your login logic
+        // Example: Authenticate the user using an API or other methods
         console.log('Logged in with username:', this.username);
       },
     },
