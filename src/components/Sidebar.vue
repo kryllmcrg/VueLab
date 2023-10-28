@@ -37,6 +37,31 @@
           <h1>Welcome to My App</h1>
           <p>This is the main content of your sidebar.</p>
           <p>You can add more content here.</p>
+
+          <!-- Table for Members and Positions -->
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Member Name</th>
+                <th>Position</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Member 1</td>
+                <td>Position 1</td>
+              </tr>
+              <tr>
+                <td>Member 2</td>
+                <td>Position 2</td>
+              </tr>
+              <tr>
+                <td>Member 3</td>
+                <td>Position 3</td>
+              </tr>
+              <!-- Add more rows as needed -->
+            </tbody>
+          </table>
         </div>
       </v-main>
 
@@ -68,10 +93,13 @@ export default {
 /* Add your custom styles here */
 .content {
   background-color: #f0f0f0;
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  text-align: center;
 }
 
 h1 {
@@ -82,5 +110,22 @@ h1 {
 p {
   font-size: 16px;
   color: #555;
+}
+
+.table {
+  width: 100%;
+  max-width: 600px; /* Adjust the width as needed */
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table th, .table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #f2f2f2;
 }
 </style>
