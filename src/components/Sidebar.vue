@@ -32,11 +32,10 @@
       </v-navigation-drawer>
 
       <!-- Main Content -->
-      <v-main style="height: 750px">
-        <div class="content">
-          <h1>Welcome to My App</h1>
-          <p>This is the main content of your sidebar.</p>
-          <p>You can add more content here.</p>
+      <v-main>
+        <div class="article">
+          <h1>Application Development</h1>
+          <p>GROUP MEMBERS</p>
 
           <!-- Table for Members and Positions -->
           <table class="table">
@@ -48,20 +47,25 @@
             </thead>
             <tbody>
               <tr>
-                <td>Member 1</td>
-                <td>Position 1</td>
+                <td>Karylle V. Macaraig</td>
+                <td>Leader</td>
               </tr>
               <tr>
-                <td>Member 2</td>
-                <td>Position 2</td>
+                <td>Jhoanna Clarisse Dolores</td>
+                <td>Member</td>
               </tr>
               <tr>
-                <td>Member 3</td>
-                <td>Position 3</td>
+                <td>Bryan Philip Marcos</td>
+                <td>Member</td>
               </tr>
               <!-- Add more rows as needed -->
             </tbody>
           </table>
+        </div>
+
+        <div class="article">
+          <h1>Another Article</h1>
+          <p>Article content goes here.</p>
         </div>
       </v-main>
 
@@ -91,15 +95,12 @@ export default {
 
 <style scoped>
 /* Add your custom styles here */
-.content {
+.article {
   background-color: #f0f0f0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 60px;
+  margin: 20px;
 }
 
 h1 {
