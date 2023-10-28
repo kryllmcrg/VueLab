@@ -5,7 +5,7 @@
         <button class="navbar-toggler" type="button" @click="toggleSidebar">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <span class="navbar-brand">Your App Name</span>
+        <span class="navbar-brand">We are cool!!</span>
       </nav>
   
       <!-- Sidebar -->
